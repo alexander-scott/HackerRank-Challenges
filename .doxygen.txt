@@ -32,7 +32,7 @@
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = "LearnTDD"
+PROJECT_NAME           = "HackerrankSolutions"
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -46,7 +46,7 @@ PROJECT_BRIEF          = "A simple example of how to setup a complete CI environ
 # spaces.
 # Note: If this tag is empty the current directory is searched.
 
-INPUT                  = ChessLogic
+INPUT                  = Challenges
 
 #---------------------------------------------------------------------------
 # Shared

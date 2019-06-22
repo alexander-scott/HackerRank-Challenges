@@ -5,7 +5,7 @@ add_subdirectory(googletest)
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 add_executable(Challenges
-        "Arrays/2D_Array_DS/Challenge.cpp")
+        "Arrays/2D_Array.cpp" Arrays/Left_Rotation.cpp)
 
 target_link_libraries(Challenges gtest gtest_main)
 target_link_libraries(Challenges Solutions)

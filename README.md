@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Alexander-Scott/HackerrankSolutions.svg?branch=master)](https://travis-ci.org/Alexander-Scott/HackerrankSolutions)
-[![codecov](https://codecov.io/gh/Alexander-Scott/LearnTDD/branch/master/graph/badge.svg)](https://codecov.io/gh/Alexander-Scott/LearnTDD)
+[![codecov](https://codecov.io/gh/Alexander-Scott/HackerrankSolutions/branch/master/graph/badge.svg)](https://codecov.io/gh/Alexander-Scott/HackerrankSolutions)
 [![Coverage Status](https://coveralls.io/repos/github/Alexander-Scott/HackerrankSolutions/badge.svg?branch=master)](https://coveralls.io/github/Alexander-Scott/HackerrankSolutions?branch=master)
 <a href="https://scan.coverity.com/projects/alexander-scott-hackerranksolutions">
   <img alt="Coverity Scan Build Status"
