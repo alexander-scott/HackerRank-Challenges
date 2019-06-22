@@ -1,9 +1,9 @@
-[![Build Status](https://travis-ci.org/Alexander-Scott/LearnTDD.svg?branch=master)](https://travis-ci.org/Alexander-Scott/LearnTDD)
+[![Build Status](https://travis-ci.org/Alexander-Scott/HackerrankSolutions.svg?branch=master)](https://travis-ci.org/Alexander-Scott/HackerrankSolutions)
 [![codecov](https://codecov.io/gh/Alexander-Scott/LearnTDD/branch/master/graph/badge.svg)](https://codecov.io/gh/Alexander-Scott/LearnTDD)
 [![Coverage Status](https://coveralls.io/repos/github/Alexander-Scott/LearnTDD/badge.svg?branch=master)](https://coveralls.io/github/Alexander-Scott/LearnTDD?branch=master)
-<a href="https://scan.coverity.com/projects/alexander-scott-learntdd">
+<a href="https://scan.coverity.com/projects/alexander-scott-hackerranksolutions">
   <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/18646/badge.svg"/>
+       src="https://scan.coverity.com/projects/18652/badge.svg"/>
 </a>
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/792c28cfb02e4866999977b3d8770783)](https://www.codacy.com/app/Alexander-Scott/LearnTDD?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Alexander-Scott/LearnTDD&amp;utm_campaign=Badge_Grade)
 

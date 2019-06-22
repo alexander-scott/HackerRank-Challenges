@@ -80,31 +80,6 @@ matrix:
         fi
 
   #
-  # Astyle Format
-  #
-  - os: linux
-    env:
-      - TEST="Astyle Format"
-    addons:
-      apt:
-        sources:
-          - ubuntu-toolchain-r-test
-        packages:
-          - gcc-6
-          - g++-6
-    script:
-      - cmake -DENABLE_ASTYLE=ON -DCMAKE_CXX_COMPILER="g++-6" ..
-      - make
-      - make format
-      - |
-        if [[ -n $(git diff) ]]; then
-          echo "You must run make format before submitting a pull request"
-          echo ""
-          git diff
-          exit -1
-        fi
-
-  #
   # CppCheck
   #
   - os: linux
@@ -137,7 +112,7 @@ matrix:
           - g++-6
       coverity_scan:
         project:
-          name: "Alexander-Scott/LearnTDD"
+          name: "Alexander-Scott/HackerrankSolutions"
           description: "A simple example of how to setup a complete CI environment for C and C++"
         notification_email: alexowns2009@hotmail.co.uk
         build_command_prepend: "cmake -DCMAKE_CXX_COMPILER=g++-6 .."
