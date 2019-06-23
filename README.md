@@ -1,7 +1,7 @@
-[![Build Status](https://travis-ci.org/Alexander-Scott/HackerrankSolutions.svg?branch=master)](https://travis-ci.org/Alexander-Scott/HackerrankSolutions)
-[![codecov](https://codecov.io/gh/Alexander-Scott/HackerrankSolutions/branch/master/graph/badge.svg)](https://codecov.io/gh/Alexander-Scott/HackerrankSolutions)
-[![Coverage Status](https://coveralls.io/repos/github/Alexander-Scott/HackerrankSolutions/badge.svg?branch=master)](https://coveralls.io/github/Alexander-Scott/HackerrankSolutions?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d882ecec67a490088b782576abe205f)](https://www.codacy.com/app/Alexander-Scott/HackerrankSolutions?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Alexander-Scott/HackerrankSolutions&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/Alexander-Scott/Hackerrank-Challenges.svg?branch=master)](https://travis-ci.org/Alexander-Scott/Hackerrank-Challenges)
+[![codecov](https://codecov.io/gh/Alexander-Scott/HackerRank-Challenges/branch/master/graph/badge.svg)](https://codecov.io/gh/Alexander-Scott/HackerRank-Challenges)
+[![Coverage Status](https://coveralls.io/repos/github/Alexander-Scott/HackerRank-Challenges/badge.svg)](https://coveralls.io/github/Alexander-Scott/HackerRank-Challenges)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/54103631939944538a94bc34f63ae821)](https://www.codacy.com/app/Alexander-Scott/HackerRank-Challenges?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Alexander-Scott/HackerRank-Challenges&amp;utm_campaign=Badge_Grade)
 
 # HackerRank Challenges
 
