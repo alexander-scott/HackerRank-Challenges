@@ -9,6 +9,8 @@
 
 using namespace std;
 
+/// \brief Arrays: Left Rotation
+/// https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
 namespace Arrays_Left_Rotation
 {
     vector<string> split_string(string input_string) {

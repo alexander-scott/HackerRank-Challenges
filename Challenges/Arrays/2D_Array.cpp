@@ -5,7 +5,8 @@
 
 using namespace std;
 
-/// 2D Array - DS
+/// \brief 2D_Array
+/// https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
 namespace Arrays_2D_Array
 {
     class Arrays_2D_Array_Test : public ::testing::Test
@@ -56,6 +57,13 @@ namespace Arrays_2D_Array
     TEST_F(Arrays_2D_Array_Test, Input08)
     {
         Init("../Challenges/Arrays_2D_Array_Input08.txt", "../Challenges/Arrays_2D_Array_Output08.txt");
+        int result = HourglassSum(arr);
+        ASSERT_EQ(expectedResult, result);
+    }
+
+    TEST_F(Arrays_2D_Array_Test, Input03)
+    {
+        Init("../Challenges/Arrays_2D_Array_Input03.txt", "../Challenges/Arrays_2D_Array_Output03.txt");
         int result = HourglassSum(arr);
         ASSERT_EQ(expectedResult, result);
     }
