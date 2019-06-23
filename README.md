@@ -1,9 +1,6 @@
 [![Build Status](https://travis-ci.org/Alexander-Scott/HackerrankSolutions.svg?branch=master)](https://travis-ci.org/Alexander-Scott/HackerrankSolutions)
 [![codecov](https://codecov.io/gh/Alexander-Scott/HackerrankSolutions/branch/master/graph/badge.svg)](https://codecov.io/gh/Alexander-Scott/HackerrankSolutions)
 [![Coverage Status](https://coveralls.io/repos/github/Alexander-Scott/HackerrankSolutions/badge.svg?branch=master)](https://coveralls.io/github/Alexander-Scott/HackerrankSolutions?branch=master)
-<a href="https://scan.coverity.com/projects/alexander-scott-hackerranksolutions">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/18652/badge.svg"/>
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d882ecec67a490088b782576abe205f)](https://www.codacy.com/app/Alexander-Scott/HackerrankSolutions?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Alexander-Scott/HackerrankSolutions&amp;utm_campaign=Badge_Grade)
 
 # Learn Test Driven Development

@@ -3,6 +3,7 @@
 //
 
 #include <vector>
+#include <limits>
 
 /// \brief 2D_Array
 /// https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
@@ -17,7 +18,7 @@ namespace Arrays_2D_Array
     /// \return Returns the largest value hourglass
     int HourglassSum(vector<vector<int>> arr)
     {
-        int maximumValue = INT_MIN;
+        int maximumValue = std::numeric_limits<int>::min();
 
         for (int row = 1; row < 5; ++row)
         {

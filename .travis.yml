@@ -98,30 +98,6 @@ matrix:
       - make check
 
   #
-  # Coverity Scan
-  #
-  - os: linux
-    env:
-      - TEST="Coverity Scan"
-    addons:
-      apt:
-        sources:
-          - ubuntu-toolchain-r-test
-        packages:
-          - gcc-6
-          - g++-6
-      coverity_scan:
-        project:
-          name: "Alexander-Scott/HackerrankSolutions"
-          description: "A simple example of how to setup a complete CI environment for C and C++"
-        notification_email: alexowns2009@hotmail.co.uk
-        build_command_prepend: "cmake -DCMAKE_CXX_COMPILER=g++-6 .."
-        build_command: "make"
-        branch_pattern: master
-    script:
-      - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
-
-  #
   # Codecov
   #
   - os: linux
