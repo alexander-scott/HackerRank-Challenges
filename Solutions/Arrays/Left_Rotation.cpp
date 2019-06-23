@@ -16,7 +16,7 @@ namespace Arrays_Left_Rotation
 
     /// \brief Loop through the vector and move each item left d times
     /// \param a The initial vector to rotate
-    /// \param b The number of rotations
+    /// \param d The number of rotations
     /// \return The rotated vector
     vector<int> RotLeft(vector<int> a, int d)
     {

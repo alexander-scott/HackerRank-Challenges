@@ -104,4 +104,11 @@ namespace Arrays_Minimum_Swaps_2
         int result = MinimumSwaps(inputArray);
         ASSERT_EQ(expectedResult, result);
     }
+
+    TEST_F(Arrays_Minimum_Swaps_2_Test, Input03)
+    {
+        Init("../Challenges/Arrays_Minimum_Swaps_2_Input03.txt", "../Challenges/Arrays_Minimum_Swaps_2_Output03.txt");
+        int result = MinimumSwaps(inputArray);
+        ASSERT_EQ(expectedResult, result);
+    }
 }
