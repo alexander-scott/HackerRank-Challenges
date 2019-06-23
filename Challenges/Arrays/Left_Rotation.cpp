@@ -98,21 +98,28 @@ namespace Arrays_Left_Rotation
     TEST_F(Arrays_Left_Rotation_Test, Input00)
     {
         Init("../Challenges/Arrays_Left_Rotation_Input00.txt", "../Challenges/Arrays_Left_Rotation_Output00.txt");
-        vector<int> result = rotLeft(inputArray, d);
+        vector<int> result = RotLeft(inputArray, d);
         ASSERT_EQ(expectedResult, result);
     }
 
     TEST_F(Arrays_Left_Rotation_Test, Input01)
     {
         Init("../Challenges/Arrays_Left_Rotation_Input01.txt", "../Challenges/Arrays_Left_Rotation_Output01.txt");
-        vector<int> result = rotLeft(inputArray, d);
+        vector<int> result = RotLeft(inputArray, d);
         ASSERT_EQ(expectedResult, result);
     }
 
     TEST_F(Arrays_Left_Rotation_Test, Input10)
     {
         Init("../Challenges/Arrays_Left_Rotation_Input10.txt", "../Challenges/Arrays_Left_Rotation_Output10.txt");
-        vector<int> result = rotLeft(inputArray, d);
+        vector<int> result = RotLeft(inputArray, d);
+        ASSERT_EQ(expectedResult, result);
+    }
+
+    TEST_F(Arrays_Left_Rotation_Test, Input08)
+    {
+        Init("../Challenges/Arrays_Left_Rotation_Input08.txt", "../Challenges/Arrays_Left_Rotation_Output08.txt");
+        vector<int> result = RotLeft(inputArray, d);
         ASSERT_EQ(expectedResult, result);
     }
 }

@@ -16,26 +16,35 @@ namespace Arrays_Left_Rotation
     /// 1 <= d <= n
     /// 1 < a[i] <= 10^6
     /// \return The rotated vector
-    vector<int> rotLeft(vector<int> a, int d)
+    vector<int> RotLeft(vector<int> a, int d)
     {
-        vector<int> vec(a);
+        int arraySize = a.size();
 
-        int arraySize = vec.size();
+        // Create a new vector for our items
+        vector<int> vec(arraySize);
 
-        // Perform d rotations
-        for (int i = 0; i < d; ++i)
+        // Work out how many times we need to rotate the values
+        // If the rotation value is greater than the size of the array,
+        // use the modulus operator to disregard 'full rotations', where
+        // the items do a complete rotation and end up in the same spot.
+        int rotationCount = d;
+        if (rotationCount > arraySize)
         {
-            // Cache the first value
-            int firstValue = vec[0];
+            rotationCount = rotationCount % arraySize;
+        }
 
-            // Move the values one to the left
-            for (int j = 1; j < arraySize; ++j)
+        // Loop through each item in the array and calculate the new index
+        for (int j = 0; j < arraySize; ++j)
+        {
+            int newIndex = j - rotationCount;
+
+            // If the new index is less than 0 we need to bump it back to the end
+            if (newIndex < 0)
             {
-                vec[j - 1] = vec[j];
+                newIndex = arraySize + newIndex;
             }
 
-            // Set the last value
-            vec[arraySize - 1] = firstValue;
+            vec[newIndex] = a[j];
         }
 
         return vec;
