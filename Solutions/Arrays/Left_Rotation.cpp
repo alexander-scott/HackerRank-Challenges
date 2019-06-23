@@ -6,15 +6,17 @@
 
 /// \brief Arrays: Left Rotation
 /// https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
+/// Constraints
+/// 1 <= n <= 10^5
+/// 1 <= d <= n
+/// 1 < a[i] <= 10^6
 namespace Arrays_Left_Rotation
 {
     using namespace std;
 
     /// \brief Loop through the vector and move each item left d times
-    /// \param
-    /// 1 <= n <= 10^5
-    /// 1 <= d <= n
-    /// 1 < a[i] <= 10^6
+    /// \param a The initial vector to rotate
+    /// \param b The number of rotations
     /// \return The rotated vector
     vector<int> RotLeft(vector<int> a, int d)
     {

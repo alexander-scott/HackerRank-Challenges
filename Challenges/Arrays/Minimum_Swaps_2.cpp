@@ -1,19 +1,19 @@
 //
-// Created by Alexander Scott on 2019-06-22.
+// Created by Alexander Scott on 2019-06-23.
 //
 
 #include "gtest/gtest.h"
-#include "Arrays/Left_Rotation.cpp"
+#include "Arrays/Minimum_Swaps_2.cpp"
 
 #include <fstream>
 
 using namespace std;
 
 /// \brief Arrays: Left Rotation
-/// https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
-namespace Arrays_Left_Rotation
+/// https://www.hackerrank.com/challenges/minimum-swaps-2/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays&h_r=next-challenge&h_v=zen
+namespace Arrays_Minimum_Swaps_2
 {
-    class Arrays_Left_Rotation_Test : public ::testing::Test
+    class Arrays_Minimum_Swaps_2_Test : public ::testing::Test
     {
     public:
         void Init(const char* inputFile, const char* outputFile)
@@ -27,8 +27,6 @@ namespace Arrays_Left_Rotation
             vector<string> nd = split_string(nd_temp);
 
             int n = stoi(nd[0]);
-
-            d = stoi(nd[1]);
 
             string a_temp_temp;
             getline(stream, a_temp_temp);
@@ -46,25 +44,12 @@ namespace Arrays_Left_Rotation
             stream.close();
 
             stream.open(outputFile);
-
-            getline(stream, a_temp_temp);
-
-            a_temp = split_string(a_temp_temp);
-
-            expectedResult = vector<int>(n);
-
-            for (int i = 0; i < n; i++) {
-                int a_item = stoi(a_temp[i]);
-
-                expectedResult[i] = a_item;
-            }
-
+            stream >> expectedResult;
             stream.close();
         }
 
     protected:
-        int d;
-        vector<int> expectedResult;
+        int expectedResult;
         vector<int> inputArray;
 
     private:
@@ -99,31 +84,24 @@ namespace Arrays_Left_Rotation
         }
     };
 
-    TEST_F(Arrays_Left_Rotation_Test, Input00)
+    TEST_F(Arrays_Minimum_Swaps_2_Test, Input00)
     {
-        Init("../Challenges/Arrays_Left_Rotation_Input00.txt", "../Challenges/Arrays_Left_Rotation_Output00.txt");
-        vector<int> result = RotLeft(inputArray, d);
+        Init("../Challenges/Arrays_Minimum_Swaps_2_Input00.txt", "../Challenges/Arrays_Minimum_Swaps_2_Output00.txt");
+        int result = MinimumSwaps(inputArray);
         ASSERT_EQ(expectedResult, result);
     }
 
-    TEST_F(Arrays_Left_Rotation_Test, Input01)
+    TEST_F(Arrays_Minimum_Swaps_2_Test, Input01)
     {
-        Init("../Challenges/Arrays_Left_Rotation_Input01.txt", "../Challenges/Arrays_Left_Rotation_Output01.txt");
-        vector<int> result = RotLeft(inputArray, d);
+        Init("../Challenges/Arrays_Minimum_Swaps_2_Input01.txt", "../Challenges/Arrays_Minimum_Swaps_2_Output01.txt");
+        int result = MinimumSwaps(inputArray);
         ASSERT_EQ(expectedResult, result);
     }
 
-    TEST_F(Arrays_Left_Rotation_Test, Input10)
+    TEST_F(Arrays_Minimum_Swaps_2_Test, Input02)
     {
-        Init("../Challenges/Arrays_Left_Rotation_Input10.txt", "../Challenges/Arrays_Left_Rotation_Output10.txt");
-        vector<int> result = RotLeft(inputArray, d);
-        ASSERT_EQ(expectedResult, result);
-    }
-
-    TEST_F(Arrays_Left_Rotation_Test, Input08)
-    {
-        Init("../Challenges/Arrays_Left_Rotation_Input08.txt", "../Challenges/Arrays_Left_Rotation_Output08.txt");
-        vector<int> result = RotLeft(inputArray, d);
+        Init("../Challenges/Arrays_Minimum_Swaps_2_Input02.txt", "../Challenges/Arrays_Minimum_Swaps_2_Output02.txt");
+        int result = MinimumSwaps(inputArray);
         ASSERT_EQ(expectedResult, result);
     }
 }

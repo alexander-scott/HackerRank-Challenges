@@ -7,14 +7,15 @@
 
 /// \brief 2D_Array
 /// https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
+/// Constraints
+/// -9 <= arr[i][j] <= 9
+/// 0 <= i,j <= 5
 namespace Arrays_2D_Array
 {
     using namespace std;
 
     /// \brief Loop through the 'hourglass' values in the 2D array and return the largest sum of values.
-    /// \param
-    /// -9 <= arr[i][j] <= 9
-    /// 0 <= i,j <= 5
+    /// \param arr The 2D Array
     /// \return Returns the largest value hourglass
     int HourglassSum(vector<vector<int>> arr)
     {
